@@ -1,0 +1,115 @@
+.suscribe_section {
+    width: 100%;
+    height: 100vh;
+    background-color: #B8B8B8;
+}
+
+.suscribe_div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suscribe_sub_div {
+    width: 70%;
+    height: 70%;
+    background-color: #18191E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.suscribe_div_left {
+    width: 50%;
+    height: 100%;
+    background-image: url("../../assets/background.jpg");
+    background-size: cover;
+}
+
+.suscribe_div_left_text {
+    margin-left: 13%;
+    margin-top: 20%;
+    width: 80%;
+    height: 60%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.suscribe_div_left_text h1 {
+    color: white;
+    font-size: 2.2vw;
+    font-weight: 700;
+}
+
+.suscribe_div_left_text p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 200px;
+}
+
+.suscribe_div_left_text button {
+    width: 160px;
+    height: 45px;
+    background-color: #FFD300;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+
+.suscribe_div_right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suscribe_div_right h1 {
+    width: 100%;
+    line-height: 5;
+    padding-left: 50px;
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    font-size: 1.8vw;
+}
+
+.suscribe_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suscribe_form_div {
+    width: 80%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.suscribe_form_buttom {
+    width: 160px;
+    height: 45px;
+    background-color: rgba(255, 213, 0, 0.766);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
