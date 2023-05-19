@@ -17,19 +17,6 @@ router.get('/', async (req, res) => {
     }
 })
 
-//Get one
-router.get('/:id', (req, res) => {
-    try {
-        const inscripcion = InscripcionSchema.findById(req.params.id)
-        res.json({
-            "message": "Inscripcion encontrada",
-            "data": inscripcion
-        })
-    }
-    catch (err) {
-        res.status(500).json({ message: err.message })
-    }
-})
 
 //Create
 router.post('/', async (req, res) => {
@@ -70,8 +57,7 @@ router.patch('/:id', async (req, res) => {
 //Delete
 router.delete('/:id', async (req, res) => {
     try {
-        const inscripcion = await InscripcionSchema.findById(req.params.id)
-        await inscripcion.remove()
+        const inscripcion = await InscripcionSchema.deleteOne({ _id: req.params.id })
         res.json({
             "message": "Inscripcion eliminada", 
             "data": inscripcion
